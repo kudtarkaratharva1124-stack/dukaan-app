@@ -1,0 +1,65 @@
+/* --- Tabs --- */
+.settings-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  overflow-x: auto;
+}
+.settings-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.settings-tab:hover { color: var(--color-text); }
+.settings-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* --- Forms --- */
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 420px;
+}
+
+.settings-hint {
+  font-size: 13px;
+  margin: -4px 0 0;
+}
+
+.settings-role-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* --- Team --- */
+.settings-role-select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 8px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.settings-role-select-full {
+  width: 100%;
+  padding: 10px;
+  text-transform: none;
+}

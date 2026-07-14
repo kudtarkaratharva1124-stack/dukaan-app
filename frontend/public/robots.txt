@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /inventory
+Disallow: /scanner
+Disallow: /orders
+Disallow: /billing
+Disallow: /khata
+Disallow: /analytics
+Disallow: /settings
+Allow: /
+Allow: /login
+Allow: /signup
