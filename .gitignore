@@ -4,3 +4,5 @@ dist/
 .env.local
 api/src/uploads/*
 !api/src/uploads/.gitkeep
+.vercel
+.env*

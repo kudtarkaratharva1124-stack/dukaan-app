@@ -18,7 +18,7 @@ const NAV_ITEMS = [
   { to: "/settings", label: "Settings", icon: Settings }
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ onNavigate }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -30,6 +30,7 @@ export default function Sidebar() {
           <NavLink
             key={to}
             to={to}
+            onClick={onNavigate}
             className={({ isActive }) => "sidebar-link" + (isActive ? " active" : "")}
           >
             <Icon size={18} />
